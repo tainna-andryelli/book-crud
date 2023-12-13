@@ -2,7 +2,7 @@
 @extends('templates.template')
 
 @section('content')
-  <h1 class="text-center">Biblioteca</h1>
+  <h1 class="text-center">Livraria</h1>
 
   <div class="text-center mt-3 mb-4">
     <a href="">
@@ -36,7 +36,7 @@
             <a href="{{url("books/$books->id")}}">
               <button class="btn btn-dark">Visualizar</button>
             </a>
-            <a href="">
+            <a href="{{url("books/create")}}">
               <button class="btn btn-primary">Editar</button>
             </a>
             <a href="">
