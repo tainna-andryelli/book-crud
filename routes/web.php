@@ -21,4 +21,4 @@ use Illuminate\Support\Facades\Route;
 
 //passando rota através de um controller chamado 'BookController' e vai chamar o método index de dentro desse controller:
 use App\Http\Controllers\BookController;
-Route::resource('/', BookController::class);
+Route::resource('/books', BookController::class);
