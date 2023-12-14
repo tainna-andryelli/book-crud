@@ -27,7 +27,7 @@ class BookController extends Controller
 
         //se eu quisesse mostrar na tabela ordenado de maneira diferente: sortBy('title'), sortByDesc('id')
         //$book = $this->objBook->all()->sortByDesc('id');
-        $book = $this->objBook->all();
+        $book = $this->objBook->paginate(10);
         return view('index', compact('book'));
     }
 
