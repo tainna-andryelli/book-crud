@@ -11,6 +11,7 @@
   </div>
 
   <div class="col-8 m-auto">
+    @csrf
     <table class="table text-center">
       <thead>
         <tr>
@@ -18,7 +19,7 @@
           <th scope="col">Título</th>
           <th scope="col">Autor</th>
           <th scope="col">Preço</th>
-          <th scope="col">Actions</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
 
@@ -39,7 +40,7 @@
             <a href="{{url("books/$books->id/edit")}}">
               <button class="btn btn-primary">Editar</button>
             </a>
-            <a href="">
+            <a href="{{url("books/$books->id")}}" class="js-del">
               <button class="btn btn-danger">Deletar</button>
             </a>
           </td>
